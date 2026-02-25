@@ -24,7 +24,7 @@ namespace detail
 		}
 	};
 
-#if (GLM_COMPILER & GLM_COMPILER_CUDA) || (GLM_COMPILER & GLM_COMPILER_HIP)
+#if (GLM_COMPILER & GLM_COMPILER_CUDA) || (GLM_COMPILER & GLM_COMPILER_HIP) || defined(__MUSACC__)
 	template<>
 	struct compute_abs<float, true>
 	{

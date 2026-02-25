@@ -169,6 +169,10 @@
 #elif defined(__HIP__)
 #	define GLM_COMPILER GLM_COMPILER_HIP
 
+// MUSA (musacc)
+#elif defined(__MUSACC__)
+#	define GLM_COMPILER GLM_COMPILER_CUDA80
+
 // Clang
 #elif defined(__clang__)
 #	if defined(__apple_build_version__)
